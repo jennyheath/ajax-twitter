@@ -12,4 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.serializejson
 //= require follow_toggle
+//= require users_search
