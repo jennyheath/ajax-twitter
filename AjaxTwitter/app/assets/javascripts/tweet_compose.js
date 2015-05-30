@@ -1,6 +1,11 @@
 $.TweetCompose = function(el) {
   this.$el = $(el);
   $('.tweet-compose').on("submit", this.submit.bind(this));
+  $('.tweet-compose textarea').on("input", function (event) {
+    var chars = event.currentTarget.value.length;
+    var charsLeft = 140 - chars;
+    $('.tweet-compose strong').text('' + charsLeft + '');
+  });
 };
 
 
