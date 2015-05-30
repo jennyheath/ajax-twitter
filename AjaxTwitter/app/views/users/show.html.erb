@@ -3,7 +3,7 @@
 <%= render "follows/form", user: @user %>
 
 <b>Tweets</b>
-<ul>
+<ul id="feed">
   <% @user.tweets.each do |tweet| %>
     <li><%= render "tweets/tweet", tweet: tweet %></li>
   <% end %>
